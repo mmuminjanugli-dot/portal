@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Внутренний портал компании</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Шапка сайта -->
+    <header>
+        <div class="container">
+            <div class="logo">🏢 Наша Компания</div>
+            <nav>
+                <a href="#news">Новости</a>
+                <a href="#docs">Документы</a>
+                <a href="#team">Команда</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Главный контент -->
+    <main class="container">
+        
+        <!-- Блок новостей -->
+        <section id="news">
+            <h2>📢 Объявления и Новости</h2>
+            <div class="card">
+                <h3>Обновление графика работы в праздники</h3>
+                <p class="date">9 июня 2026</p>
+                <p>Уважаемые коллеги, обратите внимание на изменение графика работы в связи с предстоящими праздниками. Подробности во вложении к приказу.</p>
+            </div>
+            <div class="card">
+                <h3>Приветствуем нового сотрудника!</h3>
+                <p class="date">5 июня 2026</p>
+                <p>В нашей команде пополнение. К нам присоединился системный администратор Алексей. Добро пожаловать!</p>
+            </div>
+        </section>
+
+        <!-- Блок документов -->
+        <section id="docs">
+            <h2>📁 База знаний и Документы</h2>
+            <div class="grid-docs">
+                <div class="doc-item">
+                    <span>📄 Регламент компании.pdf</span>
+                    <a href="#" class="btn-download">Открыть</a>
+                </div>
+                <div class="doc-item">
+                    <span>📄 Шаблон заявления на отпуск.docx</span>
+                    <a href="#" class="btn-download">Скачать</a>
+                </div>
+                <div class="doc-item">
+                    <span>🎨 Брендбук и логотипы.zip</span>
+                    <a href="#" class="btn-download">Скачать</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Блок сотрудников -->
+        <section id="team">
+            <h2>👥 Наша команда (5 пользователей)</h2>
+            <div class="grid-team" id="team-container">
+                <!-- Данные загрузятся из JavaScript -->
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>&copy; 2026 Внутренний портал для сотрудников. Все права защищены.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

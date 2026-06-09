@@ -1,0 +1,134 @@
+/* Общие стили */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f6f9;
+    color: #333;
+}
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Шапка */
+header {
+    background-color: #1e3a8a;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Секции */
+section {
+    margin: 40px 0;
+}
+h2 {
+    color: #1e3a8a;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+/* Карточки новостей */
+.card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    margin-bottom: 15px;
+}
+.date {
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* Документы */
+.grid-docs {
+    display: grid;
+    gap: 10px;
+}
+.doc-item {
+    background: white;
+    padding: 15px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-left: 4px solid #3b82f6;
+}
+.btn-download {
+    background: #3b82f6;
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+.btn-download:hover {
+    background: #2563eb;
+}
+
+/* Команда */
+.grid-team {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 20px;
+}
+.team-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+.team-avatar {
+    width: 70px;
+    height: 70px;
+    background: #e5e7eb;
+    border-radius: 50%;
+    margin: 0 auto 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+.team-card h3 {
+    margin: 10px 0 5px;
+    font-size: 1rem;
+}
+.team-card p {
+    margin: 0;
+    color: #6b7280;
+    font-size: 0.85rem;
+}
+
+/* Подвал */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #6b7280;
+    font-size: 0.9rem;
+    margin-top: 60px;
+    border-top: 1px solid #e5e7eb;
+}
